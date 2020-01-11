@@ -1,10 +1,13 @@
 package com.tna.wikigamesolver.wiki;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+import com.tna.wikigamesolver.other.Constants;
+
 import java.util.Objects;
 
 /**
+ * Data class which contains the very basic informations of an article.
+ * These informations include the title of the article and the url to the article.
+ *
  * @author Philip Anderson
  **/
 public class WikiArticle {
@@ -14,13 +17,9 @@ public class WikiArticle {
 
     public WikiArticle(String title, String url) {
         this.title = title;
-        this.url = url;
+        this.url = Constants.WIKIPEDIA_URL + url;
     }
 
-
-    public URI toURI() throws URISyntaxException {
-        return new URI(getUrl());
-    }
 
     @Override
     public String toString() {

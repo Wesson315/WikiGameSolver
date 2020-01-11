@@ -1,9 +1,9 @@
 package com.tna.wikigamesolver.graph;
 
+
 import com.tna.wikigamesolver.storage.StorageStrategy;
 
 import java.util.Set;
-
 /**
  * Interface to communicate between Anchors and the Wikipedia Graph.
  *
